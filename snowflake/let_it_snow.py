@@ -1,5 +1,6 @@
 import turtle
 import numpy as np
+import random as rand
 
 
 def main(speed=0, bg_color="grey"):
@@ -11,6 +12,7 @@ def main(speed=0, bg_color="grey"):
     myTurtle.speed(speed)
     # change background color
     turtle_screen.bgcolor(bg_color)
+    
   
  
     """TODO: define different colors here"""
@@ -24,6 +26,8 @@ def main(speed=0, bg_color="grey"):
         """TODO: set snowflake color here (one of the colors defined above)"""
 
         # Go to the start position of the snowflake
+        col =["red", "yellow", "green", "blue", "pink", "orange", "black"]
+        myTurtle.pencolor(rand.choice(col))
         myTurtle.penup()
         myTurtle.goto(pos[0], pos[1])
         myTurtle.pendown()
@@ -48,5 +52,5 @@ def snowflake_branch(size, myTurtle):
     myTurtle.forward(size)
 
 
-if __name__ == "__main__":
-    main()
+#if __name__ == "__main__":
+main()
