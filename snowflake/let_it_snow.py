@@ -26,8 +26,8 @@ def main(speed=0, bg_color="grey"):
         """TODO: set snowflake color here (one of the colors defined above)"""
 
         # Go to the start position of the snowflake
-        col =["red", "yellow", "green", "blue", "pink", "orange", "black"]
-        myTurtle.pencolor(rand.choice(col))
+        col =["red", "yellow", "green", "blue", "pink", "orange", "black"] # array of colors
+        myTurtle.pencolor(rand.choice(col)) #random color selection 
         myTurtle.penup()
         myTurtle.goto(pos[0], pos[1])
         myTurtle.pendown()
